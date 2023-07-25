@@ -1,4 +1,4 @@
-package pet.project.kinopoisk.config;
+package pet.project.bot.config;
 
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Value;
