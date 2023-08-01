@@ -32,12 +32,12 @@ public class TelegramBot extends TelegramLongPollingBot {
         if (update.hasMessage() && update.getMessage().hasText()){
             String messageText = update.getMessage().getText();
             long chatId = update.getMessage().getChatId();
-            switch (messageText){
-                case "/start":
-                    sendMessage(chatId, "Hi, " + update.getMessage().getChat().getFirstName() +  ", nice to meet you!");
+            switch (messageText.substring(0,1)){
+                case "/":
+                    sendMessage(chatId, "Скоро тут будет команда");
                     break;
                 default:
-                    sendMessage(chatId, "Sorry, command was not recognized:(");
+                    sendMessage(chatId, "Простите, я не понимаю");
             }
         }
     }
