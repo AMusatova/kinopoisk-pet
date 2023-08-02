@@ -1,0 +1,13 @@
+camunda.bpm:
+  admin-user:
+    id: ${CAMUNDA_ADMIN_ID}
+    password: ${CAMUNDA_ADMIN_PASSWORD}
+
+spring:
+  datasource:
+    url: ${DATASOURCE_URL}
+    username: ${DATASOURCE_USERNAME}
+    password: ${DATASOURCE_PASSWORD}
+
+server:
+  port: ${PORT}
